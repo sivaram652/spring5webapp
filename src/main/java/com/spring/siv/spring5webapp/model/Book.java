@@ -15,6 +15,13 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Book {
 	
+	public Book( String title, String isbn, String publisher) {
+		super();
+		this.title = title;
+		this.isbn = isbn;
+		this.publisher = publisher;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
